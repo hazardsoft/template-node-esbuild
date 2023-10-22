@@ -2,6 +2,7 @@ import * as esbuild from "esbuild";
 
 const ctx = await esbuild.context({
     entryPoints: ["src/index.ts"],
+    format: "esm",
     bundle: true,
     platform: "node",
     packages: "external",
