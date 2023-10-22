@@ -6,6 +6,8 @@ const ctx = await esbuild.context({
     platform: "node",
     packages: "external",
     outfile: "dist/bundle.js",
+    sourcemap: true,
+    minify: false,
 });
 
 await ctx.watch();
